@@ -1,0 +1,8 @@
+
+
+.card-body i {
+  color: black !important
+}
+.card-body i:hover {
+  color: var(--bs-info)  !important
+}

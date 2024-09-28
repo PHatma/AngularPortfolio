@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/*! Custom Prp  */
+:root {
+  --main-color: #2c3e50;
+}
+
+/* ! utilities */
+.bg-main {
+  background-color: var(--main-color);
+}
+.text-main {
+  color: var(--main-color);
+}
+.btn-main {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px 25px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+}
+
+
+/*! Reset  */
+a,
+a:active {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.pb-105 {
+  padding-bottom: 105px;
+}
+
+nav .active {
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: fit-content;
+  margin-left: -16px;
+}
+
+.vh-90 {
+  min-height: 90vh;
+}
+@media (max-width: 1199.98px) {
+  .pb-105 {
+    padding-bottom: 95px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .pb-105 {
+    padding-bottom: 90px;
+  }
+}
+.home img{
+  width: 250px;
+  height:250px;
+  border-radius: 50%;
+  background: #000;
+  border-color: #000 !important;
+
+}
+.card{
+  overflow: hidden;
+}
+.projects img{
+  transition: transform 2s ;
+}
+.projects img:hover{
+ transform: scale(1.2);
+}
+.navs .nav-item button{
+  color: black !important;
+  font-weight: bolder;
+}
+.nav-pills{
+  --bs-nav-pills-link-active-bg:var(--bs-info) !important}
