@@ -14,4 +14,10 @@ export class ContactComponent {
   userEmail: string = '';
   userPassword: string = '';
   userAge!: number;
+  isDarkMode = false;
+
+  toggleDarkMode() {
+    this.isDarkMode = !this.isDarkMode;
+    document.body.classList.toggle('dark-mode');
+  } 
 }

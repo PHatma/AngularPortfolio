@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
 /*! Custom Prp  */
+
 :root {
   --main-color: #2c3e50;
 }
@@ -78,3 +79,31 @@ nav .active {
 }
 .nav-pills{
   --bs-nav-pills-link-active-bg:var(--bs-info) !important}
+
+
+  .dark-mode-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .dark-mode-button .fa {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .dark-mode {
+background-image: linear-gradient(to right, #434343 0%, black 100%);   
+background-color: rgba(0, 0, 0, 0.8);
+color: #fff !important;
+  }
+  .section{
+    position: relative;
+  }
+  .dark-mode-button{
+    position: absolute;
+    width: 20%;
+    top:10%;
+    right:25px;
+  }

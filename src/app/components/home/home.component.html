@@ -1,11 +1,18 @@
-<section class="home vh-90 d-flex align-items-center">
-  <figure class="container d-flex flex-column align-items-center">
+<section class="home vh-90 d-flex align-items-center section">
+  <button class="dark-mode-button" (click)="toggleDarkMode()">
+    @if(isDarkMode){    
+      <i class="fa fa-moon text-black" ></i>
+  }@if(!isDarkMode){    <i class="fa fa-sun text-black" ></i>
+       }
+       </button>
+  <figure class="container d-flex flex-column align-items-center mt-3">
     <img src="./assets/photo_2022-04-06_00-28-07.jpg" alt="" width="280" />
     <figcaption class="py-3">
-      <app-star [TitleStar]="title" [customColor]="color"></app-star>
+      <h1 class="text-center">Front end Web developer</h1>
+      <app-star  [customColor]="color"></app-star>
       <div class=" text-center fs-5 ">
-        <p class="text-muted">
-          'I am <span class="text-bold ">Phatma Hany</span> ,I am 23 years old Graduated from cairo university in 2023 , I’m From 6th of October, and I am  Angular Developer ,I am driven by creating exceptional user experiences. With a solid foundation in Angular, I enjoy transforming designs into interactive and responsive web applications. I am always eager to learn new technologies and collaborate with cross-functional teams to build innovative solutions.My goal is to contribute to projects that make a positive impact. '
+        <p >
+          'I am <span class="text-bold ">Phatma Hany</span> ,I am 23 years old ,Bechalor degree in computer Science Graduated from cairo university in 2023 ,  From 6th of October, and I am  Angular Developer ,I am driven by creating exceptional user experiences. With a solid foundation in Angular, I enjoy transforming designs into interactive and responsive web applications. I am always eager to learn new technologies and collaborate with cross-functional teams to build innovative solutions.My goal is to contribute to projects that make a positive impact. '
            </p>
            <h3 class="text-start mt-5">Languages and Tools :</h3>
            <div class="d-flex fs-2 text-center  mt-2">

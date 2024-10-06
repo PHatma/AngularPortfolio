@@ -1,6 +1,6 @@
 <nav
-  class="navbar navbar-expand-md bg-main fixed-top"
-  [class.p-4]="!isScrolling"
+  class="navbar navbar-expand-md bg-dark fixed-top"
+  [class.p-2]="!isScrolling"
 >
   <div class="container">
     <a class="navbar-brand fs-2 fw-bolder" routerLink="">My Portfolio</a>
@@ -17,7 +17,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-     
+        <li class="nav-item text-uppercase fw-bolder fs-5 mx-md-4">
+          <a class="nav-link" routerLink="home" routerLinkActive="active"
+            >Home</a
+          >
+        </li>
         <li class="nav-item text-uppercase fw-bolder fs-5 mx-md-4">
           <a class="nav-link" routerLink="portfolio" routerLinkActive="active"
             >portfolio</a

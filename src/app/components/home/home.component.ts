@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { StarComponent } from '../star/star.component';
 
 @Component({
@@ -8,7 +8,15 @@ import { StarComponent } from '../star/star.component';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent {
-  title: string = ' Front end Web developer';
+
+export class HomeComponent  {
+
+
   color: string = 'black';
+  isDarkMode = false;
+
+  toggleDarkMode() {
+    this.isDarkMode = !this.isDarkMode;
+    document.body.classList.toggle('dark-mode');
+  }
 }
