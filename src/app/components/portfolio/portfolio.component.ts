@@ -9,10 +9,5 @@ import { StarComponent } from '../star/star.component';
   styleUrl: './portfolio.component.css',
 })
 export class PortfolioComponent {
-  isDarkMode = false;
-
-  toggleDarkMode() {
-    this.isDarkMode = !this.isDarkMode;
-    document.body.classList.toggle('dark-mode');
-  } 
+  
 }
