@@ -24,4 +24,10 @@ export class NavbarComponent {
   onWindowScroll() {
     this.isScrolling = window.scrollY > 30;
   }
+  isDarkMode = false;
+
+  toggleDarkMode() {
+    this.isDarkMode = !this.isDarkMode;
+    document.body.classList.toggle('dark-mode');
+  }
 }
