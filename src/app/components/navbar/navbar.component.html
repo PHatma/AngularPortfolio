@@ -1,8 +1,16 @@
 <nav
-  class="navbar navbar-expand-md bg-dark fixed-top"
+  class="navbar navbar-expand-md bg-dark text-white fixed-top"
   [class.p-2]="!isScrolling"
 >
   <div class="container">
+    <button class="dark-mode-button p-5" (click)="toggleDarkMode()">
+      @if(isDarkMode){
+        <i class="fa fa-moon text-white" ></i>
+        }
+      @if(!isDarkMode){    
+        <i class="fa fa-sun text-white" ></i>
+         }
+    </button>
     <a class="navbar-brand fs-2 fw-bolder" routerLink="">My Portfolio</a>
     <button
       class="navbar-toggler"
@@ -13,10 +21,14 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon "></span>
     </button>
+    
+   
     <div class="collapse navbar-collapse" id="navbarNav">
+      
       <ul class="navbar-nav ms-auto">
+        
         <li class="nav-item text-uppercase fw-bolder fs-5 mx-md-4">
           <a class="nav-link" routerLink="home" routerLinkActive="active"
             >Home</a
@@ -32,6 +44,7 @@
             >contact</a
           >
         </li>
+        
       </ul>
     </div>
   </div>
