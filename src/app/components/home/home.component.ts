@@ -13,10 +13,5 @@ export class HomeComponent  {
 
 
   color: string = 'black';
-  isDarkMode = false;
-
-  toggleDarkMode() {
-    this.isDarkMode = !this.isDarkMode;
-    document.body.classList.toggle('dark-mode');
-  }
+  
 }
