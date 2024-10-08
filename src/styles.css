@@ -98,12 +98,5 @@ background-image: linear-gradient(to right, #434343 0%, black 100%);
 background-color: rgba(0, 0, 0, 0.8);
 color: #fff !important;
   }
-  .section{
-    position: relative;
-  }
-  .dark-mode-button{
-    position: absolute;
-    width: 20%;
-    top:10%;
-    right:25px;
-  }
+  
+ 
