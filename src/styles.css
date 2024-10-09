@@ -13,15 +13,6 @@
 .text-main {
   color: var(--main-color);
 }
-.navbar-icon {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-}
 .btn-main {
   background-color: var(--main-color);
   color: #fff;
@@ -49,6 +40,7 @@ nav .active {
   border-radius: 10px;
   width: fit-content;
   margin-left: -16px;
+  color:white !important
 }
 
 .vh-90 {
@@ -86,8 +78,9 @@ nav .active {
   color: black !important;
   font-weight: bolder;
 }
-.nav-pills{
-  --bs-nav-pills-link-active-bg:var(--bs-info) !important}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+  --bs-nav-pills-link-active-bg:black !important;
+  color: var(--bs-nav-pills-link-active-color) !important;}
 
 
   .dark-mode-button {
@@ -106,6 +99,16 @@ nav .active {
 background-image: linear-gradient(to right, #434343 0%, black 100%);   
 background-color: rgba(0, 0, 0, 0.8);
 color: #fff !important;
+--bs-nav-pills-link-active-bg:white !important;
+--bs-nav-pills-link-active-color: black !important
   }
   
- 
+  .navbar-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
